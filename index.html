@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florian Njanjouo | Étudiant en 3A Ingénieur ESIEA </title>
-    <meta name="description" content="Portfolio de Florian Njanjouo - Étudiant ingénieur 3ème année ESIEA,souhaitant se  spécialiser en Intelligence Artificielle et Data Science">
+    <title>Florian Njanjouo | Étudiant en 3A Ingénieur ESIEA</title>
+    <meta name="description" content="Portfolio de Florian Njanjouo - Étudiant ingénieur 3ème année ESIEA, souhaitant se spécialiser en Intelligence Artificielle et Data Science">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,23 +13,34 @@
             --white: #ffffff;
             --cream: #fefcf8;
             --light-gray: #f8f9fc;
-            --blue-50: #eff6ff;
-            --blue-100: #dbeafe;
-            --blue-200: #bfdbfe;
-            --blue-400: #60a5fa;
-            --blue-500: #3b82f6;
-            --blue-600: #2563eb;
-            --blue-700: #1d4ed8;
-            --pink-100: #fce7f3;
-            --pink-200: #fbcfe8;
-            --pink-400: #f472b6;
-            --pink-500: #ec4899;
-            --pink-600: #db2777;
-            --yellow-100: #fef9c3;
-            --yellow-200: #fef08a;
-            --yellow-300: #fde047;
-            --yellow-400: #facc15;
-            --yellow-500: #eab308;
+            
+            /* Nouvelles couleurs originales */
+            --purple-50: #faf5ff;
+            --purple-100: #f3e8ff;
+            --purple-200: #e9d5ff;
+            --purple-400: #c084fc;
+            --purple-500: #a855f7;
+            --purple-600: #9333ea;
+            --purple-700: #7e22ce;
+            
+            --cyan-50: #ecfeff;
+            --cyan-100: #cffafe;
+            --cyan-200: #a5f3fc;
+            --cyan-400: #22d3ee;
+            --cyan-500: #06b6d4;
+            --cyan-600: #0891b2;
+            
+            --coral-50: #fff7ed;
+            --coral-100: #ffedd5;
+            --coral-200: #fed7aa;
+            --coral-400: #fb923c;
+            --coral-500: #f97316;
+            --coral-600: #ea580c;
+            
+            --emerald-100: #d1fae5;
+            --emerald-400: #34d399;
+            --emerald-500: #10b981;
+            
             --text-dark: #1e293b;
             --text-medium: #475569;
             --text-light: #64748b;
@@ -47,7 +58,7 @@
             overflow-x: hidden;
         }
 
-        /* Background image avec blur */
+        /* Background avec gradient violet-cyan */
         .bg-hero {
             position: fixed;
             top: 0;
@@ -55,8 +66,7 @@
             width: 100%;
             height: 100%;
             z-index: -2;
-            background: url('background.jpg') center center / cover no-repeat;
-            filter: blur(3px) brightness(0.3);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
         }
 
         .bg-overlay {
@@ -66,7 +76,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(135deg, rgba(30, 41, 59, 0.85) 0%, rgba(15, 23, 42, 0.9) 100%);
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.85) 0%, rgba(126, 34, 206, 0.7) 100%);
         }
 
         /* Navigation */
@@ -79,7 +89,7 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
             border-radius: 100px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 30px rgba(147, 51, 234, 0.2);
             z-index: 1000;
             display: flex;
             align-items: center;
@@ -90,7 +100,7 @@
         .logo {
             font-weight: 800;
             font-size: 1.3rem;
-            color: var(--blue-600);
+            color: var(--purple-600);
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -100,7 +110,7 @@
         .logo-icon {
             width: 35px;
             height: 35px;
-            background: linear-gradient(135deg, var(--blue-500), var(--pink-500));
+            background: linear-gradient(135deg, var(--purple-500), var(--cyan-500));
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -127,20 +137,20 @@
         }
 
         .nav-links a:hover {
-            background: var(--blue-50);
-            color: var(--blue-600);
+            background: var(--purple-50);
+            color: var(--purple-600);
         }
 
         .nav-cta {
-            background: linear-gradient(135deg, var(--blue-500), var(--blue-600)) !important;
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600)) !important;
             color: white !important;
             padding: 0.7rem 1.5rem !important;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
         }
 
         .nav-cta:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 6px 25px rgba(168, 85, 247, 0.4);
         }
 
         .mobile-menu-btn {
@@ -193,13 +203,13 @@
             align-items: center;
             gap: 0.6rem;
             padding: 0.6rem 1.2rem;
-            background: linear-gradient(135deg, var(--yellow-100), var(--yellow-200));
+            background: linear-gradient(135deg, var(--emerald-100), var(--cyan-100));
             border-radius: 50px;
             font-size: 0.9rem;
             font-weight: 600;
-            color: var(--yellow-500);
+            color: var(--emerald-500);
             margin-bottom: 1.5rem;
-            border: 2px solid var(--yellow-300);
+            border: 2px solid var(--emerald-400);
         }
 
         .hero-badge::before {
@@ -215,7 +225,7 @@
         }
 
         .hero h1 .highlight {
-            background: linear-gradient(135deg, var(--blue-400), var(--pink-400));
+            background: linear-gradient(135deg, var(--purple-400), var(--cyan-400));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -239,7 +249,7 @@
 
         .hero-description {
             font-size: 1.25rem;
-            color: rgba(255, 255, 255, 0.85);
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 2.5rem;
             max-width: 550px;
             line-height: 1.8;
@@ -267,14 +277,14 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--blue-500), var(--blue-600));
+            background: linear-gradient(135deg, var(--purple-500), var(--purple-600));
             color: white;
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+            box-shadow: 0 8px 25px rgba(168, 85, 247, 0.35);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(59, 130, 246, 0.45);
+            box-shadow: 0 12px 35px rgba(168, 85, 247, 0.45);
         }
 
         .btn-secondary {
@@ -305,7 +315,7 @@
             background: rgba(255, 255, 255, 0.95);
             border-radius: 30px;
             padding: 2.5rem;
-            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 25px 80px rgba(147, 51, 234, 0.3);
             position: relative;
             border: 1px solid rgba(255, 255, 255, 0.5);
         }
@@ -317,7 +327,7 @@
             left: -3px;
             right: -3px;
             bottom: -3px;
-            background: linear-gradient(135deg, var(--blue-400), var(--pink-400), var(--yellow-400));
+            background: linear-gradient(135deg, var(--purple-400), var(--cyan-400), var(--coral-400));
             border-radius: 32px;
             z-index: -1;
             opacity: 0.7;
@@ -328,9 +338,10 @@
             height: 140px;
             border-radius: 25px;
             margin: 0 auto 1.5rem;
-            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 15px 40px rgba(168, 85, 247, 0.3);
             overflow: hidden;
             border: 4px solid white;
+            background: linear-gradient(135deg, var(--purple-200), var(--cyan-200));
         }
 
         .profile-avatar img {
@@ -364,11 +375,11 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.5rem 1rem;
-            background: linear-gradient(135deg, var(--blue-100), var(--pink-100));
+            background: linear-gradient(135deg, var(--purple-100), var(--cyan-100));
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
-            color: var(--blue-600);
+            color: var(--purple-600);
         }
 
         .profile-stats {
@@ -376,7 +387,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
             padding-top: 1.5rem;
-            border-top: 1px solid var(--blue-100);
+            border-top: 1px solid var(--purple-100);
         }
 
         .profile-stat {
@@ -386,7 +397,7 @@
         .profile-stat-value {
             font-size: 1.4rem;
             font-weight: 800;
-            color: var(--blue-600);
+            color: var(--purple-600);
         }
 
         .profile-stat-label {
@@ -409,9 +420,9 @@
             margin-bottom: 0.3rem;
         }
 
-        .code-key { color: var(--pink-500); }
-        .code-value { color: var(--blue-600); }
-        .code-bool { color: var(--yellow-500); font-weight: 600; }
+        .code-key { color: var(--coral-500); }
+        .code-value { color: var(--purple-600); }
+        .code-bool { color: var(--emerald-500); font-weight: 600; }
 
         /* Floating badges */
         .floating-tag {
@@ -431,23 +442,23 @@
         .floating-tag.tag-1 {
             top: -15px;
             right: -15px;
-            background: var(--blue-100);
-            color: var(--blue-600);
+            background: var(--purple-100);
+            color: var(--purple-600);
         }
 
         .floating-tag.tag-2 {
             bottom: 100px;
             left: -30px;
-            background: var(--pink-100);
-            color: var(--pink-600);
+            background: var(--cyan-100);
+            color: var(--cyan-600);
             animation-delay: 1s;
         }
 
         .floating-tag.tag-3 {
             bottom: -10px;
             right: 50px;
-            background: var(--yellow-100);
-            color: var(--yellow-500);
+            background: var(--coral-100);
+            color: var(--coral-600);
             animation-delay: 2s;
         }
 
@@ -456,7 +467,7 @@
             50% { transform: translateY(-10px); }
         }
 
-        /* Sections avec fond blanc */
+        /* Sections */
         .section-white {
             background: var(--cream);
             position: relative;
@@ -478,8 +489,8 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.5rem 1rem;
-            background: var(--blue-100);
-            color: var(--blue-600);
+            background: var(--purple-100);
+            color: var(--purple-600);
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
@@ -506,7 +517,7 @@
             border-radius: 40px;
             margin: 2rem 5%;
             padding: 5rem;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 20px 60px rgba(147, 51, 234, 0.1);
         }
 
         .about-grid {
@@ -523,7 +534,7 @@
         .about-image {
             width: 100%;
             aspect-ratio: 1;
-            background: linear-gradient(135deg, var(--blue-100), var(--pink-100));
+            background: linear-gradient(135deg, var(--purple-100), var(--cyan-100));
             border-radius: 30px;
             overflow: hidden;
             position: relative;
@@ -552,22 +563,22 @@
         }
 
         .about-stat-card:hover {
-            border-color: var(--blue-300);
+            border-color: var(--purple-300);
             transform: translateY(-3px);
         }
 
-        .about-stat-card:nth-child(2) { background: var(--blue-50); }
-        .about-stat-card:nth-child(3) { background: var(--pink-100); }
-        .about-stat-card:nth-child(4) { background: var(--yellow-100); }
+        .about-stat-card:nth-child(2) { background: var(--purple-50); }
+        .about-stat-card:nth-child(3) { background: var(--cyan-100); }
+        .about-stat-card:nth-child(4) { background: var(--coral-100); }
 
         .about-stat-value {
             font-size: 1.4rem;
             font-weight: 800;
-            color: var(--blue-600);
+            color: var(--purple-600);
         }
 
-        .about-stat-card:nth-child(3) .about-stat-value { color: var(--pink-500); }
-        .about-stat-card:nth-child(4) .about-stat-value { color: var(--yellow-500); }
+        .about-stat-card:nth-child(3) .about-stat-value { color: var(--cyan-600); }
+        .about-stat-card:nth-child(4) .about-stat-value { color: var(--coral-600); }
 
         .about-stat-label {
             font-size: 0.8rem;
@@ -603,11 +614,11 @@
             background: var(--light-gray);
             border-radius: 15px;
             transition: all 0.3s;
-            border-left: 4px solid var(--blue-400);
+            border-left: 4px solid var(--purple-400);
         }
 
-        .highlight-card:nth-child(2) { border-left-color: var(--pink-400); }
-        .highlight-card:nth-child(3) { border-left-color: var(--yellow-400); }
+        .highlight-card:nth-child(2) { border-left-color: var(--cyan-400); }
+        .highlight-card:nth-child(3) { border-left-color: var(--coral-400); }
 
         .highlight-card:hover {
             transform: translateX(10px);
@@ -617,7 +628,7 @@
         .highlight-icon {
             width: 50px;
             height: 50px;
-            background: var(--blue-100);
+            background: var(--purple-100);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -625,8 +636,8 @@
             font-size: 1.5rem;
         }
 
-        .highlight-card:nth-child(2) .highlight-icon { background: var(--pink-100); }
-        .highlight-card:nth-child(3) .highlight-icon { background: var(--yellow-100); }
+        .highlight-card:nth-child(2) .highlight-icon { background: var(--cyan-100); }
+        .highlight-card:nth-child(3) .highlight-icon { background: var(--coral-100); }
 
         .highlight-text h4 { font-weight: 600; margin-bottom: 0.2rem; }
         .highlight-text p { font-size: 0.9rem; color: var(--text-light); margin: 0; }
@@ -645,7 +656,7 @@
             background: white;
             border-radius: 25px;
             padding: 2rem;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 40px rgba(147, 51, 234, 0.08);
             transition: all 0.4s ease;
             border: 2px solid transparent;
             position: relative;
@@ -659,17 +670,17 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(90deg, var(--blue-400), var(--blue-600));
+            background: linear-gradient(90deg, var(--purple-400), var(--purple-600));
         }
 
-        .skill-card:nth-child(2)::before { background: linear-gradient(90deg, var(--pink-400), var(--pink-600)); }
-        .skill-card:nth-child(3)::before { background: linear-gradient(90deg, var(--yellow-400), var(--yellow-500)); }
-        .skill-card:nth-child(4)::before { background: linear-gradient(90deg, var(--blue-400), var(--pink-400)); }
+        .skill-card:nth-child(2)::before { background: linear-gradient(90deg, var(--cyan-400), var(--cyan-600)); }
+        .skill-card:nth-child(3)::before { background: linear-gradient(90deg, var(--coral-400), var(--coral-600)); }
+        .skill-card:nth-child(4)::before { background: linear-gradient(90deg, var(--purple-400), var(--cyan-400)); }
 
         .skill-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-            border-color: var(--blue-200);
+            box-shadow: 0 20px 60px rgba(147, 51, 234, 0.15);
+            border-color: var(--purple-200);
         }
 
         .skill-card-header {
@@ -682,7 +693,7 @@
         .skill-icon {
             width: 55px;
             height: 55px;
-            background: var(--blue-100);
+            background: var(--purple-100);
             border-radius: 15px;
             display: flex;
             align-items: center;
@@ -690,9 +701,9 @@
             font-size: 1.8rem;
         }
 
-        .skill-card:nth-child(2) .skill-icon { background: var(--pink-100); }
-        .skill-card:nth-child(3) .skill-icon { background: var(--yellow-100); }
-        .skill-card:nth-child(4) .skill-icon { background: linear-gradient(135deg, var(--blue-100), var(--pink-100)); }
+        .skill-card:nth-child(2) .skill-icon { background: var(--cyan-100); }
+        .skill-card:nth-child(3) .skill-icon { background: var(--coral-100); }
+        .skill-card:nth-child(4) .skill-icon { background: linear-gradient(135deg, var(--purple-100), var(--cyan-100)); }
 
         .skill-card h3 { font-size: 1.2rem; font-weight: 700; }
 
@@ -710,13 +721,13 @@
         }
 
         .skill-tag:hover {
-            background: var(--blue-100);
-            color: var(--blue-600);
+            background: var(--purple-100);
+            color: var(--purple-600);
         }
 
         /* Projects Section */
         #projects {
-            background: linear-gradient(180deg, var(--cream) 0%, var(--blue-50) 100%);
+            background: linear-gradient(180deg, var(--cream) 0%, var(--purple-50) 100%);
             padding: 6rem 5%;
             margin: 0;
             max-width: none;
@@ -738,33 +749,34 @@
             background: white;
             border-radius: 25px;
             overflow: hidden;
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 15px 50px rgba(147, 51, 234, 0.12);
             transition: all 0.4s ease;
-            border: 1px solid rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(147, 51, 234, 0.1);
         }
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 25px 70px rgba(59, 130, 246, 0.15);
+            box-shadow: 0 25px 70px rgba(147, 51, 234, 0.2);
         }
 
         .project-image {
-            height: 180px;
+            height: 200px;
             position: relative;
             overflow: hidden;
         }
 
-        .project-card:nth-child(1) .project-image { background: linear-gradient(135deg, var(--blue-200), var(--blue-400)); }
-        .project-card:nth-child(2) .project-image { background: linear-gradient(135deg, var(--pink-200), var(--pink-400)); }
-        .project-card:nth-child(3) .project-image { background: linear-gradient(135deg, var(--yellow-200), var(--yellow-400)); }
+        .project-card:nth-child(1) .project-image { background: linear-gradient(135deg, var(--purple-200), var(--purple-400)); }
+        .project-card:nth-child(2) .project-image { background: linear-gradient(135deg, var(--cyan-200), var(--cyan-400)); }
+        .project-card:nth-child(3) .project-image { background: linear-gradient(135deg, var(--coral-200), var(--coral-400)); }
+        .project-card:nth-child(4) .project-image { background: linear-gradient(135deg, var(--emerald-100), var(--emerald-400)); }
 
         .project-image-icon {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 4rem;
-            opacity: 0.8;
+            font-size: 4.5rem;
+            opacity: 0.9;
         }
 
         .project-content { padding: 1.5rem; }
@@ -778,15 +790,16 @@
 
         .project-tag {
             padding: 0.4rem 0.8rem;
-            background: var(--blue-100);
-            color: var(--blue-600);
+            background: var(--purple-100);
+            color: var(--purple-600);
             border-radius: 50px;
             font-size: 0.75rem;
             font-weight: 600;
         }
 
-        .project-card:nth-child(2) .project-tag { background: var(--pink-100); color: var(--pink-600); }
-        .project-card:nth-child(3) .project-tag { background: var(--yellow-100); color: var(--yellow-500); }
+        .project-card:nth-child(2) .project-tag { background: var(--cyan-100); color: var(--cyan-600); }
+        .project-card:nth-child(3) .project-tag { background: var(--coral-100); color: var(--coral-600); }
+        .project-card:nth-child(4) .project-tag { background: var(--emerald-100); color: var(--emerald-500); }
 
         .project-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; }
         .project-card p { color: var(--text-medium); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem; }
@@ -795,7 +808,7 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            color: var(--blue-600);
+            color: var(--purple-600);
             font-weight: 600;
             text-decoration: none;
             transition: all 0.3s;
@@ -822,7 +835,7 @@
             transform: translateX(-50%);
             width: 4px;
             height: 100%;
-            background: linear-gradient(180deg, var(--blue-400), var(--pink-400), var(--yellow-400));
+            background: linear-gradient(180deg, var(--purple-400), var(--cyan-400), var(--coral-400));
             border-radius: 4px;
         }
 
@@ -847,20 +860,20 @@
             transform: translateX(-50%);
             width: 20px;
             height: 20px;
-            background: var(--blue-500);
+            background: var(--purple-500);
             border-radius: 50%;
             border: 4px solid white;
-            box-shadow: 0 0 0 4px var(--blue-200);
+            box-shadow: 0 0 0 4px var(--purple-200);
         }
 
-        .timeline-item:nth-child(2)::before { background: var(--pink-500); box-shadow: 0 0 0 4px var(--pink-200); }
-        .timeline-item:nth-child(3)::before { background: var(--yellow-500); box-shadow: 0 0 0 4px var(--yellow-200); }
+        .timeline-item:nth-child(2)::before { background: var(--cyan-500); box-shadow: 0 0 0 4px var(--cyan-200); }
+        .timeline-item:nth-child(3)::before { background: var(--coral-500); box-shadow: 0 0 0 4px var(--coral-200); }
 
         .timeline-content {
             background: white;
             padding: 1.5rem;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 30px rgba(147, 51, 234, 0.1);
             max-width: 350px;
             transition: all 0.3s;
             border: 2px solid transparent;
@@ -868,22 +881,22 @@
 
         .timeline-content:hover {
             transform: scale(1.03);
-            border-color: var(--blue-300);
+            border-color: var(--purple-300);
         }
 
         .timeline-date {
             display: inline-block;
             padding: 0.3rem 0.8rem;
-            background: var(--blue-100);
-            color: var(--blue-600);
+            background: var(--purple-100);
+            color: var(--purple-600);
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
             margin-bottom: 0.8rem;
         }
 
-        .timeline-item:nth-child(2) .timeline-date { background: var(--pink-100); color: var(--pink-600); }
-        .timeline-item:nth-child(3) .timeline-date { background: var(--yellow-100); color: var(--yellow-500); }
+        .timeline-item:nth-child(2) .timeline-date { background: var(--cyan-100); color: var(--cyan-600); }
+        .timeline-item:nth-child(3) .timeline-date { background: var(--coral-100); color: var(--coral-600); }
 
         .timeline-content h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
         .timeline-content p { color: var(--text-medium); font-size: 0.9rem; }
@@ -901,7 +914,7 @@
             padding: 4rem;
             max-width: 700px;
             margin: 0 auto;
-            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 25px 80px rgba(147, 51, 234, 0.12);
             position: relative;
             overflow: hidden;
         }
@@ -913,7 +926,7 @@
             left: 0;
             right: 0;
             height: 8px;
-            background: linear-gradient(90deg, var(--blue-400), var(--pink-400), var(--yellow-400));
+            background: linear-gradient(90deg, var(--purple-400), var(--cyan-400), var(--coral-400));
         }
 
         .contact-card h3 { font-size: 2rem; font-weight: 800; margin-bottom: 1rem; }
@@ -942,9 +955,9 @@
         }
 
         .contact-link:hover {
-            border-color: var(--blue-400);
+            border-color: var(--purple-400);
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.15);
         }
 
         .contact-link svg { width: 24px; height: 24px; }
@@ -963,11 +976,11 @@
             text-align: center;
             padding: 3rem 5%;
             background: white;
-            border-top: 1px solid var(--blue-100);
+            border-top: 1px solid var(--purple-100);
         }
 
         footer p { color: var(--text-light); font-size: 0.95rem; }
-        footer .heart { color: var(--pink-500); }
+        footer .heart { color: var(--coral-500); }
 
         /* Animations */
         .fade-in {
@@ -1038,7 +1051,7 @@
                     <span class="highlight">Florian Njanjouo</span>
                 </h1>
                 <p class="hero-description">
-                    Étudiant ingénieur en <strong>3ème année à l'ESIEA</strong>, veut se spécialiser en <strong>Intelligence Artificielle</strong> et <strong>Data Science</strong>. Je veux créer des solutions intelligentes qui transforment les données en décisions.
+                    Étudiant ingénieur en <strong>3ème année à l'ESIEA</strong>, veux me spécialiser en <strong>Intelligence Artificielle</strong> et <strong>Data Science</strong> en 4A. Je crée des solutions intelligentes qui transforment les données en décisions.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">Voir mes projets →</a>
@@ -1051,12 +1064,12 @@
             <div class="hero-visual">
                 <div class="profile-card">
                     <div class="profile-avatar">
-                        <img src="photo.jpg" alt="Florian Njanouo">
+                        <!-- Remplace photo.jpg par ton image -->
                     </div>
                     <h2 class="profile-name">Florian Njanjouo</h2>
                     <p class="profile-title">Étudiant Ingénieur @ ESIEA</p>
                     <div class="profile-specialization">
-                        <span class="specialization-badge">🤖 Aspire à une Spécialisation en  IA & Data</span>
+                        <span class="specialization-badge">🤖 Spécialisation IA & Data en 4A</span>
                     </div>
                     <div class="profile-stats">
                         <div class="profile-stat">
@@ -1064,12 +1077,12 @@
                             <div class="profile-stat-label">Année</div>
                         </div>
                         <div class="profile-stat">
-                            <div class="profile-stat-value">Licence</div>
-                            <div class="profile-stat-label">Programmation</div>
+                            <div class="profile-stat-value">5</div>
+                            <div class="profile-stat-label">Projets</div>
                         </div>
                         <div class="profile-stat">
                             <div class="profile-stat-value">IA</div>
-                            <div class="profile-stat-label">Spécialité</div>
+                            <div class="profile-stat-label">Passion</div>
                         </div>
                     </div>
                     <div class="profile-code">
@@ -1079,7 +1092,7 @@
                     </div>
                 </div>
                 <div class="floating-tag tag-1">🐍 Python</div>
-                <div class="floating-tag tag-2">🤖 Intelligence Artificielle</div>
+                <div class="floating-tag tag-2">🤖 Machine Learning</div>
                 <div class="floating-tag tag-3">📊 Data Science</div>
             </div>
         </div>
@@ -1093,7 +1106,7 @@
         <div class="about-grid">
             <div class="about-image-container">
                 <div class="about-image">
-                    <img src="photo.jpg" alt="Florian Njanouo">
+                    <!-- Remplace par ton image -->
                 </div>
                 <div class="about-stats-grid">
                     <div class="about-stat-card">
@@ -1101,8 +1114,8 @@
                         <div class="about-stat-label">Année ingénieur</div>
                     </div>
                     <div class="about-stat-card">
-                        <div class="about-stat-value">Licence</div>
-                        <div class="about-stat-label">Programmation</div>
+                        <div class="about-stat-value">2024</div>
+                        <div class="about-stat-label">Licence</div>
                     </div>
                     <div class="about-stat-card">
                         <div class="about-stat-value">IA</div>
@@ -1117,17 +1130,17 @@
             <div class="about-content">
                 <h3>Futur ingénieur passionné par l'IA</h3>
                 <p>
-                    Titulaire d'une <strong>Licence en Programmation</strong> obtenue en 2024, j'ai intégré la 3ème année du cycle ingénieur à l'<strong>ESIEA</strong> pour l'année académique 2025/2026. Je souhaite me spécialiser en <strong>Intelligence Artificielle</strong> et <strong>Data Science</strong>.
+                    Titulaire d'une <strong>Licence en Programmation</strong> obtenue en 2024, j'ai intégré la 3ème année du cycle ingénieur à l'<strong>ESIEA</strong> pour l'année académique 2025/2026. Je vais me spécialiser en <strong>Intelligence Artificielle</strong> et <strong>Data Science</strong> dès ma 4ème année.
                 </p>
                 <p>
-                    Ma curiosité me pousse à comprendre les algorithmes en profondeur — quand je travaille sur un projet ML, j'implémente tout from scratch pour vraiment maîtriser les concepts. Passionné par les données et leur pouvoir de transformation, je cherche à créer des solutions qui ont un impact réel.
+                    Ma curiosité me pousse à comprendre les algorithmes en profondeur. Passionné par les données et leur pouvoir de transformation, je cherche à créer des solutions qui ont un impact réel. J'aime coder from scratch pour vraiment maîtriser les concepts.
                 </p>
                 <div class="about-highlights">
                     <div class="highlight-card">
                         <div class="highlight-icon">🎯</div>
                         <div class="highlight-text">
                             <h4>Recherche d'alternance</h4>
-                            <p>Prêt à intégrer une équipe innovante en IA/Data</p>
+                            <p>24 mois dès juillet 2026 en IA/Data</p>
                         </div>
                     </div>
                     <div class="highlight-card">
@@ -1141,7 +1154,7 @@
                         <div class="highlight-icon">📊</div>
                         <div class="highlight-text">
                             <h4>Data Science</h4>
-                            <p>Analyse de données, visualisation, insights</p>
+                            <p>Pipeline ETL, Feature Engineering, Visualisation</p>
                         </div>
                     </div>
                 </div>
@@ -1168,7 +1181,7 @@
                     <span class="skill-tag">C</span>
                     <span class="skill-tag">Java</span>
                     <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">R</span>
                 </div>
             </div>
             <div class="skill-card fade-in">
@@ -1178,10 +1191,10 @@
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">PyTorch</span>
                     <span class="skill-tag">Scikit-learn</span>
                     <span class="skill-tag">NumPy</span>
                     <span class="skill-tag">Pandas</span>
-                    <span class="skill-tag">Keras</span>
                 </div>
             </div>
             <div class="skill-card fade-in">
@@ -1190,23 +1203,23 @@
                     <h3>Data & Visualisation</h3>
                 </div>
                 <div class="skill-tags">
+                    <span class="skill-tag">Plotly</span>
+                    <span class="skill-tag">Dash</span>
                     <span class="skill-tag">Power BI</span>
                     <span class="skill-tag">Matplotlib</span>
                     <span class="skill-tag">Seaborn</span>
-                    <span class="skill-tag">Tableau</span>
-                    <span class="skill-tag">JupyterLab</span>
                 </div>
             </div>
             <div class="skill-card fade-in">
                 <div class="skill-card-header">
                     <div class="skill-icon">🛠️</div>
-                    <h3>Outils</h3>
+                    <h3>Outils & DevOps</h3>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">GitHub</span>
-                    <span class="skill-tag">Linux</span>
                     <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">FastAPI</span>
                     <span class="skill-tag">VS Code</span>
                 </div>
             </div>
@@ -1217,10 +1230,29 @@
     <section id="projects">
         <div class="section-header">
             <span class="section-tag">🚀 Portfolio</span>
-            <h2 class="section-title">Mes projets</h2>
+            <h2 class="section-title">Mes projets GitHub</h2>
             <p class="section-description">Des réalisations concrètes en IA et Data Science</p>
         </div>
         <div class="projects-grid">
+            <!-- Projet 1: Weather AI Dashboard (NOUVEAU - ton meilleur projet !) -->
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <div class="project-image-icon">🌤️</div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Plotly Dash</span>
+                        <span class="project-tag">Pipeline ETL</span>
+                        <span class="project-tag">API REST</span>
+                    </div>
+                    <h3>Weather AI Dashboard ⭐</h3>
+                    <p>Système de surveillance météo en <strong>temps réel</strong> avec pipeline ETL complet (1050+ lignes). Feature engineering : création de 5 variables dont indice de confort. Dashboard interactif avec 6 visualisations et détection de 4 types d'alertes automatiques.</p>
+                    <a href="https://github.com/Cesaire007/weather-ai-dashboard" target="_blank" class="project-link">Voir le code →</a>
+                </div>
+            </div>
+
+            <!-- Projet 2: Perceptron -->
             <div class="project-card fade-in">
                 <div class="project-image">
                     <div class="project-image-icon">🧠</div>
@@ -1231,11 +1263,13 @@
                         <span class="project-tag">Machine Learning</span>
                         <span class="project-tag">Neural Network</span>
                     </div>
-                    <h3>Perceptron - Machine Learning</h3>
-                    <p>Implémentation d'un <strong>perceptron multicouche from scratch en C</strong>. Réseau de neurones avec rétropropagation du gradient, sans aucune librairie ML externe.</p>
-                    <a href="https://github.com/Cesaire007" target="_blank" class="project-link">Voir le code →</a>
+                    <h3>Perceptron from Scratch</h3>
+                    <p>Implémentation complète d'un <strong>perceptron en C</strong> pour classification binaire et multi-classe. Réseau de neurones avec gestion mémoire optimisée, parsing CSV et 97% de précision sur données test.</p>
+                    <a href="https://github.com/Cesaire007/Perceptron" target="_blank" class="project-link">Voir le code →</a>
                 </div>
             </div>
+
+            <!-- Projet 3: Park-X -->
             <div class="project-card fade-in">
                 <div class="project-image">
                     <div class="project-image-icon">🅿️</div>
@@ -1243,27 +1277,29 @@
                 <div class="project-content">
                     <div class="project-tags">
                         <span class="project-tag">C</span>
-                        <span class="project-tag">Linux</span>
-                        <span class="project-tag">SSH</span>
+                        <span class="project-tag">SDL2</span>
+                        <span class="project-tag">IA Navigation</span>
                     </div>
-                    <h3>Simulateur de Parking Virtuel</h3>
-                    <p>Simulation complète d'un parking avec interface visuelle via <strong>SSH sous Linux</strong>. Gestion des processus et threads.</p>
-                    <a href="https://github.com/Cesaire007" target="_blank" class="project-link">Voir le code →</a>
+                    <h3>Park-X : Parking Intelligent</h3>
+                    <p>Simulateur de parking virtuel en C sous Linux avec <strong>interface graphique SDL2</strong>. IA de navigation pour 50+ véhicules simultanés, optimisation du flux : -30% temps d'attente.</p>
+                    <a href="https://github.com/Cesaire007/park_X" target="_blank" class="project-link">Voir le code →</a>
                 </div>
             </div>
+
+            <!-- Projet 4: Plateforme Musicale (optionnel mais pour montrer diversité) -->
             <div class="project-card fade-in">
                 <div class="project-image">
-                    <div class="project-image-icon">📊</div>
+                    <div class="project-image-icon">🎵</div>
                 </div>
                 <div class="project-content">
                     <div class="project-tags">
-                        <span class="project-tag">Power BI</span>
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Data</span>
+                        <span class="project-tag">C</span>
+                        <span class="project-tag">Makefile</span>
+                        <span class="project-tag">Système</span>
                     </div>
-                    <h3>Analyse de Données</h3>
-                    <p>Projets d'analyse et visualisation avec <strong>Power BI</strong> et Python. Dashboards interactifs et insights business.</p>
-                    <a href="https://github.com/Cesaire007" target="_blank" class="project-link">Voir sur GitHub →</a>
+                    <h3>Plateforme Musicale</h3>
+                    <p>Application de gestion de bibliothèque musicale en C. Gestion de fichiers, structure de données optimisée et interface utilisateur en ligne de commande.</p>
+                    <a href="https://github.com/Cesaire007/Ma-plateforme-musicale" target="_blank" class="project-link">Voir le code →</a>
                 </div>
             </div>
         </div>
@@ -1278,9 +1314,9 @@
         <div class="timeline">
             <div class="timeline-item fade-in">
                 <div class="timeline-content">
-                    <span class="timeline-date">2025 - 2026</span>
+                    <span class="timeline-date">2025 - 2028</span>
                     <h4>3ème année Cycle Ingénieur</h4>
-                    <p>ESIEA — Spécialisation Intelligence Artificielle et Data Science</p>
+                    <p>ESIEA — Tronc commun puis spécialisation IA & Data Science en 4A</p>
                 </div>
             </div>
             <div class="timeline-item fade-in">
@@ -1292,9 +1328,9 @@
             </div>
             <div class="timeline-item fade-in">
                 <div class="timeline-content">
-                    <span class="timeline-date">2021 - 2024</span>
-                    <h4>Formation en Informatique</h4>
-                    <p>Apprentissage des fondamentaux : programmation, bases de données, réseaux</p>
+                    <span class="timeline-date">2022 - 2024</span>
+                    <h4>BTS Ingénierie Logiciel</h4>
+                    <p>Fondamentaux : programmation, bases de données, réseaux</p>
                 </div>
             </div>
         </div>
@@ -1303,7 +1339,7 @@
     <section id="contact">
         <div class="contact-card fade-in">
             <h3>Travaillons ensemble ! 🤝</h3>
-            <p>Je suis activement à la recherche d'une <strong>alternance en IA / Data Science</strong>. N'hésitez pas à me contacter !</p>
+            <p>Je suis activement à la recherche d'une <strong>alternance de 24 mois en IA / Data Science</strong> à partir de <strong>juillet 2026</strong>. N'hésitez pas à me contacter !</p>
             <div class="contact-links">
                 <a href="https://www.linkedin.com/in/florian-njanjouo-b33a5b378" target="_blank" class="contact-link">
                     <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -1313,13 +1349,17 @@
                     <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                     GitHub
                 </a>
+                <a href="mailto:floriancesaire.njanouotiwa@et.esiea.fr" class="contact-link">
+                    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    Email
+                </a>
             </div>
-            <p class="contact-location">📍 Île-de-France — Ouvert à la mobilité</p>
+            <p class="contact-location">📍 Saint-Maur-des-Fossés, Île-de-France</p>
         </div>
     </section>
 
     <footer>
-        <p>Conçu avec <span class="heart">♥</span> par Florian Njanjouo — 2025</p>
+        <p>Conçu avec <span class="heart">♥</span> par Florian Njanjouo — 2026</p>
     </footer>
 
     <script>
@@ -1351,3 +1391,4 @@
     </script>
 </body>
 </html>
+
