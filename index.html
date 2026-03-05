@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florian Njanjouo | Étudiant en 3A Ingénieur ESIEA</title>
-    <meta name="description" content="Portfolio de Florian Njanjouo - Étudiant ingénieur 3ème année ESIEA, souhaitant se spécialiser en Intelligence Artificielle et Data Science">
+    <title>Florian Njanjouo | Passionné Data — Alternance 24 mois</title>
+    <meta name="description" content="Portfolio de Florian Njanjouo - Passionné Data avec 6 mois d'expérience. Power BI, SQL, Python, Machine Learning. Recherche alternance 24 mois.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -197,18 +197,18 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.5rem 1rem;
-            background: var(--beige-50);
-            border: 1px solid var(--beige-200);
+            background: #e6f4ea;
+            border: 1px solid #b7e4c7;
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
-            color: var(--brown-500);
+            color: #2d6a4f;
             margin-bottom: 1.5rem;
         }
 
         .hero-badge::before {
-            content: '✦';
-            font-size: 0.7rem;
+            content: '🟢';
+            font-size: 0.6rem;
         }
 
         .hero h1 {
@@ -399,7 +399,7 @@
 
         .code-key { color: var(--brown-400); }
         .code-value { color: var(--brown-600); }
-        .code-bool { color: var(--brown-500); font-weight: 600; }
+        .code-bool { color: #2d6a4f; font-weight: 600; }
 
         .floating-tag {
             position: absolute;
@@ -683,6 +683,104 @@
             border-color: var(--beige-200);
         }
 
+        /* ─── Experience ─── */
+        #experience {
+            background: var(--cream);
+            padding: 6rem 5%;
+            margin: 0;
+            max-width: none;
+        }
+
+        #experience > * {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .experience-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--beige-100);
+            transition: all 0.3s;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(44, 36, 32, 0.06);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .experience-title h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.3rem;
+        }
+
+        .experience-title p {
+            color: var(--brown-500);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .experience-date {
+            padding: 0.4rem 1rem;
+            background: var(--beige-50);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--brown-500);
+            border: 1px solid var(--beige-200);
+        }
+
+        .experience-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .experience-content li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-medium);
+            font-size: 0.95rem;
+        }
+
+        .experience-content li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--brown-500);
+            font-weight: 700;
+        }
+
+        .experience-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .experience-tag {
+            padding: 0.3rem 0.8rem;
+            background: var(--warm-gray);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--text-medium);
+            font-family: var(--font-mono);
+        }
+
         /* ─── Projects ─── */
         #projects {
             background: var(--cream);
@@ -823,6 +921,7 @@
 
         .timeline-item:nth-child(2)::before { background: var(--brown-500); }
         .timeline-item:nth-child(3)::before { background: var(--brown-300); }
+        .timeline-item:nth-child(4)::before { background: var(--brown-400); }
 
         .timeline-content {
             background: white;
@@ -973,6 +1072,7 @@
             .floating-tag { display: none; }
             .contact-card { padding: 1.8rem; border-radius: 22px; }
             .contact-links { flex-direction: column; align-items: center; }
+            .experience-header { flex-direction: column; }
         }
     </style>
 </head>
@@ -985,8 +1085,8 @@
         <ul class="nav-links">
             <li><a href="#about">À propos</a></li>
             <li><a href="#skills">Compétences</a></li>
+            <li><a href="#experience">Expérience</a></li>
             <li><a href="#projects">Projets</a></li>
-            <li><a href="#parcours">Parcours</a></li>
             <li><a href="#contact" class="nav-cta">Contact</a></li>
         </ul>
         <button class="mobile-menu-btn" onclick="toggleMenu()">
@@ -997,13 +1097,13 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <span class="hero-badge">Disponible pour une alternance</span>
+                <span class="hero-badge">Disponible en alternance Data — Sept. 2026</span>
                 <h1>
                     <span class="wave">👋</span> Hello, je suis<br>
                     <span class="highlight">Florian Njanjouo</span>
                 </h1>
                 <p class="hero-description">
-                    Étudiant ingénieur en <strong>3ème année à l'ESIEA</strong>, Je veux me spécialiser en <strong>Intelligence Artificielle</strong> et <strong>Data Science</strong> en 4A. Je crée des solutions intelligentes qui transforment les données en décisions.
+                    Passionné par la <strong>Data</strong> avec 6 mois d'expérience. Étudiant ingénieur en <strong>3ème année à l'ESIEA</strong>, future spécialisation Data & IA. Je transforme les données en <strong>dashboards</strong>, <strong>analyses</strong> et <strong>modèles prédictifs</strong>.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">Voir mes projets →</a>
@@ -1019,33 +1119,33 @@
                         <img src="photo.jpg" alt="Florian Njanjouo">
                     </div>
                     <h2 class="profile-name">Florian Njanjouo</h2>
-                    <p class="profile-title">Étudiant Ingénieur @ ESIEA</p>
+                    <p class="profile-title">Data Enthusiast @ Recherche alternance</p>
                     <div class="profile-specialization">
-                        <span class="specialization-badge">🤖 Spécialisation IA & Data en 4A</span>
+                        <span class="specialization-badge">📊 Data Analyst · Data Science · ML</span>
                     </div>
                     <div class="profile-stats">
                         <div class="profile-stat">
-                            <div class="profile-stat-value">3ème</div>
-                            <div class="profile-stat-label">Année</div>
+                            <div class="profile-stat-value">6</div>
+                            <div class="profile-stat-label">Mois XP</div>
                         </div>
                         <div class="profile-stat">
-                            <div class="profile-stat-value">5 et +</div>
-                            <div class="profile-stat-label">Projets</div>
+                            <div class="profile-stat-value">5+</div>
+                            <div class="profile-stat-label">Projets Data</div>
                         </div>
                         <div class="profile-stat">
-                            <div class="profile-stat-value">IA</div>
+                            <div class="profile-stat-value">Data</div>
                             <div class="profile-stat-label">Passion</div>
                         </div>
                     </div>
                     <div class="profile-code">
-                        <div class="code-line"><span class="code-key">specialisation:</span> <span class="code-value">"IA & Data Science"</span></div>
+                        <div class="code-line"><span class="code-key">profil:</span> <span class="code-value">"Data Analyst / Data Science"</span></div>
                         <div class="code-line"><span class="code-key">disponible:</span> <span class="code-bool">true</span></div>
-                        <div class="code-line"><span class="code-key">motivation:</span> <span class="code-value">"100%"</span></div>
+                        <div class="code-line"><span class="code-key">stack:</span> <span class="code-value">"Python, SQL, Power BI, ML"</span></div>
                     </div>
                 </div>
                 <div class="floating-tag tag-1">🐍 Python</div>
-                <div class="floating-tag tag-2">🤖 Machine Learning</div>
-                <div class="floating-tag tag-3">📊 Data Science</div>
+                <div class="floating-tag tag-2">📊 Power BI</div>
+                <div class="floating-tag tag-3">🗃️ SQL</div>
             </div>
         </div>
     </section>
@@ -1062,51 +1162,51 @@
                 </div>
                 <div class="about-stats-grid">
                     <div class="about-stat-card">
-                        <div class="about-stat-value">3ème</div>
-                        <div class="about-stat-label">Année ingénieur</div>
+                        <div class="about-stat-value">6 mois</div>
+                        <div class="about-stat-label">Expérience Data</div>
                     </div>
                     <div class="about-stat-card">
-                        <div class="about-stat-value">2024-2025</div>
-                        <div class="about-stat-label">Licence</div>
+                        <div class="about-stat-value">5</div>
+                        <div class="about-stat-label">Dashboards créés</div>
                     </div>
                     <div class="about-stat-card">
-                        <div class="about-stat-value">IA</div>
-                        <div class="about-stat-label">Spécialisation</div>
+                        <div class="about-stat-value">97%</div>
+                        <div class="about-stat-label">Précision ML</div>
                     </div>
                     <div class="about-stat-card">
-                        <div class="about-stat-value">100%</div>
-                        <div class="about-stat-label">Motivé</div>
+                        <div class="about-stat-value">1050+</div>
+                        <div class="about-stat-label">Lignes code ETL</div>
                     </div>
                 </div>
             </div>
             <div class="about-content">
-                <h3>Futur ingénieur passionné par l'IA</h3>
+                <h3>Passionné Data avec expérience terrain</h3>
                 <p>
-                    Titulaire d'une <strong>Licence en Programmation</strong> obtenue en 2025, j'ai intégré la 3ème année du cycle ingénieur à l'<strong>ESIEA</strong> pour l'année académique 2025/2026. Je vais me spécialiser en <strong>Intelligence Artificielle</strong> et <strong>Data Science</strong> dès ma 4ème année.
+                    Étudiant en <strong>3ème année du cycle Ingénieur à l'ESIEA</strong>, je me spécialiserai en <strong>Data et IA</strong> en 4ème année. J'ai déjà <strong>6 mois d'expérience</strong> en Data chez SEICITEL : dashboards, reporting, automatisation, qualité des données.
                 </p>
                 <p>
-                    Ma curiosité me pousse à comprendre les algorithmes en profondeur. Passionné par les données et leur pouvoir de transformation, je cherche à créer des solutions qui ont un impact réel. J'aime coder from scratch pour vraiment maîtriser les concepts.
+                    Mon approche : comprendre les données en profondeur. Je code des projets <strong>from scratch</strong> (Perceptron en C, pipelines ETL) pour vraiment maîtriser les concepts. Data Analyst, Data Science, Machine Learning — je veux tout explorer.
                 </p>
                 <div class="about-highlights">
                     <div class="highlight-card">
-                        <div class="highlight-icon">🎯</div>
+                        <div class="highlight-icon">📊</div>
                         <div class="highlight-text">
-                            <h4>Recherche d'alternance</h4>
-                            <p>24 mois dès juillet 2026 en IA/Data</p>
+                            <h4>Data Analysis</h4>
+                            <p>Power BI, SQL, Excel, dashboards, KPIs, reporting</p>
                         </div>
                     </div>
                     <div class="highlight-card">
                         <div class="highlight-icon">🤖</div>
                         <div class="highlight-text">
-                            <h4>Intelligence Artificielle</h4>
-                            <p>Machine Learning, Deep Learning, NLP</p>
+                            <h4>Data Science & ML</h4>
+                            <p>Python, Scikit-learn, modèles prédictifs, NLP</p>
                         </div>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-icon">📊</div>
+                        <div class="highlight-icon">⚙️</div>
                         <div class="highlight-text">
-                            <h4>Data Science</h4>
-                            <p>Pipeline ETL, Feature Engineering, Visualisation</p>
+                            <h4>Data Engineering</h4>
+                            <p>Pipelines ETL, automatisation, qualité des données</p>
                         </div>
                     </div>
                 </div>
@@ -1119,71 +1219,127 @@
             <div class="section-header">
                 <span class="section-tag">💡 Compétences</span>
                 <h2 class="section-title">Mon arsenal technique</h2>
-                <p class="section-description">Les technologies que je maîtrise pour créer des solutions IA</p>
+                <p class="section-description">Les technologies que je maîtrise pour transformer les données</p>
             </div>
         </section>
         <div class="skills-grid">
             <div class="skill-card fade-in">
                 <div class="skill-card-header">
-                    <div class="skill-icon">💻</div>
-                    <h3>Langages</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">C</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">R</span>
-                </div>
-            </div>
-            <div class="skill-card fade-in">
-                <div class="skill-card-header">
-                    <div class="skill-icon">🤖</div>
-                    <h3>IA & Machine Learning</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">TensorFlow</span>
-                    <span class="skill-tag">PyTorch</span>
-                    <span class="skill-tag">Scikit-learn</span>
-                    <span class="skill-tag">NumPy</span>
-                    <span class="skill-tag">Pandas</span>
-                </div>
-            </div>
-            <div class="skill-card fade-in">
-                <div class="skill-card-header">
                     <div class="skill-icon">📊</div>
-                    <h3>Data & Visualisation</h3>
+                    <h3>Data Visualisation</h3>
                 </div>
                 <div class="skill-tags">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Tableau</span>
                     <span class="skill-tag">Plotly</span>
                     <span class="skill-tag">Dash</span>
-                    <span class="skill-tag">Power BI</span>
                     <span class="skill-tag">Matplotlib</span>
-                    <span class="skill-tag">Seaborn</span>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-card-header">
+                    <div class="skill-icon">🗃️</div>
+                    <h3>SQL & Bases de données</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Jointures</span>
+                    <span class="skill-tag">ETL</span>
+                    <span class="skill-tag">Data Quality</span>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-card-header">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python & Machine Learning</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">NLP</span>
                 </div>
             </div>
             <div class="skill-card fade-in">
                 <div class="skill-card-header">
                     <div class="skill-icon">🛠️</div>
-                    <h3>Outils & DevOps</h3>
+                    <h3>Outils & Automatisation</h3>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">Git</span>
-                    <span class="skill-tag">GitHub</span>
                     <span class="skill-tag">Docker</span>
                     <span class="skill-tag">FastAPI</span>
-                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Excel VBA</span>
+                    <span class="skill-tag">Jupyter</span>
                 </div>
             </div>
         </div>
         <div style="padding-bottom: 4rem;"></div>
     </div>
 
+    <section id="experience">
+        <div class="section-header">
+            <span class="section-tag">💼 Expérience</span>
+            <h2 class="section-title">Mon expérience professionnelle</h2>
+            <p class="section-description">6 mois d'expérience concrète en Data</p>
+        </div>
+        
+        <div class="experience-card fade-in">
+            <div class="experience-header">
+                <div class="experience-title">
+                    <h3>Stagiaire Data Analyst</h3>
+                    <p>SEICITEL SARL — Cameroun</p>
+                </div>
+                <span class="experience-date">Juin 2024 — Nov. 2024</span>
+            </div>
+            <div class="experience-content">
+                <ul>
+                    <li>Conception de <strong>5 dashboards Power BI</strong> avec 15+ indicateurs KPIs</li>
+                    <li>Extractions SQL sur <strong>+10 000 lignes</strong> pour analyses et reporting</li>
+                    <li>Détection et correction de <strong>50+ anomalies</strong> (contrôle qualité données)</li>
+                    <li>Automatisation des reportings réduisant le temps de traitement de <strong>40%</strong></li>
+                    <li>Présentation des résultats aux équipes métiers (3 équipes, 20+ personnes)</li>
+                </ul>
+                <div class="experience-tags">
+                    <span class="experience-tag">Power BI</span>
+                    <span class="experience-tag">SQL</span>
+                    <span class="experience-tag">Excel</span>
+                    <span class="experience-tag">Python</span>
+                    <span class="experience-tag">Data Quality</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-card fade-in">
+            <div class="experience-header">
+                <div class="experience-title">
+                    <h3>Développeur</h3>
+                    <p>Crystal Art Technology — Cameroun</p>
+                </div>
+                <span class="experience-date">Juin 2023 — Août 2023</span>
+            </div>
+            <div class="experience-content">
+                <ul>
+                    <li>Conception de bases de données relationnelles (SQL)</li>
+                    <li>Gestion d'une base de données de <strong>+5 000 enregistrements</strong></li>
+                    <li>Travail en équipe Agile avec gestion de versions Git</li>
+                </ul>
+                <div class="experience-tags">
+                    <span class="experience-tag">SQL</span>
+                    <span class="experience-tag">Git</span>
+                    <span class="experience-tag">Agile</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projects">
         <div class="section-header">
             <span class="section-tag">🚀 Portfolio</span>
-            <h2 class="section-title">Mes projets GitHub</h2>
-            <p class="section-description">Des réalisations concrètes en IA et Data Science</p>
+            <h2 class="section-title">Mes projets Data</h2>
+            <p class="section-description">Des réalisations concrètes en analyse, visualisation et Machine Learning</p>
         </div>
         <div class="projects-grid">
             <div class="project-card fade-in">
@@ -1214,8 +1370,24 @@
                         <span class="project-tag">Neural Network</span>
                     </div>
                     <h3>Perceptron from Scratch</h3>
-                    <p>Implémentation complète d'un <strong>perceptron en C</strong> pour classification binaire et multi-classe. Réseau de neurones avec gestion mémoire optimisée, parsing CSV et 97% de précision sur données test.</p>
+                    <p>Implémentation complète d'un <strong>perceptron en C</strong> pour classification binaire et multi-classe. Réseau de neurones avec gestion mémoire optimisée, parsing CSV et <strong>97% de précision</strong> sur données test.</p>
                     <a href="https://github.com/Cesaire007/Perceptron" target="_blank" class="project-link">Voir le code →</a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <div class="project-image-icon">📊</div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Power BI</span>
+                        <span class="project-tag">SQL</span>
+                        <span class="project-tag">KPIs</span>
+                    </div>
+                    <h3>Dashboard de Pilotage</h3>
+                    <p>Dashboard interactif avec <strong>10+ visualisations</strong> et KPIs de performance. Pipeline de données automatisé traitant 1 000+ points par jour. Alertes automatiques et reporting.</p>
+                    <a href="https://github.com/Cesaire007" target="_blank" class="project-link">Voir le projet →</a>
                 </div>
             </div>
 
@@ -1234,22 +1406,6 @@
                     <a href="https://github.com/Cesaire007/park_X" target="_blank" class="project-link">Voir le code →</a>
                 </div>
             </div>
-
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <div class="project-image-icon">🎵</div>
-                </div>
-                <div class="project-content">
-                    <div class="project-tags">
-                        <span class="project-tag">C</span>
-                        <span class="project-tag">Makefile</span>
-                        <span class="project-tag">Système</span>
-                    </div>
-                    <h3>Plateforme Musicale</h3>
-                    <p>Application de gestion de bibliothèque musicale en C. Gestion de fichiers, structure de données optimisée et interface utilisateur en ligne de commande.</p>
-                    <a href="https://github.com/Cesaire007/Ma-plateforme-musicale" target="_blank" class="project-link">Voir le code →</a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -1263,22 +1419,29 @@
             <div class="timeline-item fade-in">
                 <div class="timeline-content">
                     <span class="timeline-date">2025 - 2028</span>
-                    <h4>3ème année Cycle Ingénieur</h4>
-                    <p>ESIEA — Tronc commun puis spécialisation IA & Data Science en 4A</p>
+                    <h4>Cycle Ingénieur — ESIEA</h4>
+                    <p>3ème année tronc commun, spécialisation Data & IA en 4A</p>
+                </div>
+            </div>
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <span class="timeline-date">Juin - Nov 2024</span>
+                    <h4>Stage Data Analyst — SEICITEL</h4>
+                    <p>6 mois : dashboards, SQL, data quality, reporting</p>
                 </div>
             </div>
             <div class="timeline-item fade-in">
                 <div class="timeline-content">
                     <span class="timeline-date">2024 - 2025</span>
-                    <h4>Licence en Programmation</h4>
-                    <p>Formation complète en développement logiciel et algorithmique</p>
+                    <h4>Licence Génie Logiciel — Mention TB</h4>
+                    <p>Data Analytics, Statistiques, Bases de données</p>
                 </div>
             </div>
             <div class="timeline-item fade-in">
                 <div class="timeline-content">
                     <span class="timeline-date">2022 - 2024</span>
-                    <h4>BTS Ingénierie Logiciel</h4>
-                    <p>Fondamentaux : programmation, bases de données, réseaux</p>
+                    <h4>BTS Génie Logiciel — Mention Bien</h4>
+                    <p>SQL, Probabilités, Algorithmique, Programmation</p>
                 </div>
             </div>
         </div>
@@ -1287,7 +1450,7 @@
     <section id="contact">
         <div class="contact-card fade-in">
             <h3>Travaillons ensemble ! 🤝</h3>
-            <p>Je suis activement à la recherche d'une <strong>alternance de 24 mois en IA / Data Science</strong> à partir de <strong>juillet 2026</strong>. N'hésitez pas à me contacter !</p>
+            <p>Je suis activement à la recherche d'une <strong>alternance Data de 24 mois</strong> (Analyst, Science, Engineering) à partir de <strong>septembre 2026</strong>. N'hésitez pas à me contacter !</p>
             <div class="contact-links">
                 <a href="https://www.linkedin.com/in/florian-njanjouo" target="_blank" class="contact-link">
                     <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -1297,14 +1460,19 @@
                     <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                     GitHub
                 </a>
-                <a href="mailto:floriancesaire.njanouotiwa@et.esiea.fr" class="contact-link">
+                <a href="mailto:cesairenjanjouo@outlook.fr" class="contact-link">
                     <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                     Email
                 </a>
             </div>
-            <p class="contact-location">📍 Saint-Maur-des-Fossés, Île-de-France</p>
+            <p class="contact-location">📍 Saint-Maur-des-Fossés, Île-de-France — Mobile IDF</p>
         </div>
     </section>
+
+    <footer>
+        <p>© 2026 Florian Njanjouo — Passionné Data</p>
+    </footer>
+
     <script>
         function toggleMenu() {
             document.querySelector('.nav-links').classList.toggle('active');
